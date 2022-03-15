@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="false"
-  [scrollEvents]="true"
+  [scrollEvents]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">AC1</ion-title>
@@ -15,15 +15,15 @@
   </ion-header>
 
   <div id="container">
-    
-    //exercicio 1
+
+    <!-----exercicio 1---->
     <h3>ONG</h3>
+    
 
     <ion-item>
       <ion-input placeholder="Valor recebido em BRL R$" type="number" [(ngModel)]="valor_dolar" ></ion-input>
     </ion-item>
 
-   
      <ion-item>
       <ion-input placeholder="Valor atual em USD $" type="number" [(ngModel)]="valor_real" ></ion-input>
     </ion-item> <br>
@@ -36,10 +36,10 @@
       <ion-input type="text" readonly value={{valorConvertido}}></ion-input>
     </ion-item>
 
-    
-    //exercicio 2
+    <!-----exercicio 2---->
     <h3>NOTA</h3>
 
+  
     <ion-item>
       <ion-input placeholder="Nota da AGH" type="number" [(ngModel)] = "nota_agh"></ion-input>
     </ion-item>
@@ -52,7 +52,6 @@
       <ion-input placeholder="Nota da AT" type="number" [(ngModel)] = "nota_at"></ion-input>
     </ion-item> <br>
 
-
     <ion-button color="medium" (click) = "Nota()">
       Calcular nota final
     </ion-button>
@@ -60,5 +59,6 @@
     <ion-item>
       <ion-input type="text" readonly value={{nota}}></ion-input>
     </ion-item>
+
   </div>
 </ion-content>
